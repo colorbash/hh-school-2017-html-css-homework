@@ -1,12 +1,23 @@
+@import "variables";
 .arrow{
-	background: url(../img/arrow.png) no-repeat;
-	background-size: contain;
-    margin: 0;
-    flex-shrink: 0;
-    position: absolute;
-    left: 100%;
-    top: ~"calc(50% - 40px)";
-    width: 33px;
-    height: 64px;
+  background: url(../img/arrow.png) no-repeat;
+  background-size: contain;
+  margin: 0;
+  flex-shrink: 0;
+  position: absolute;
+  left: 100%;
+  top: ~"calc(50% - 40px)";
+  width: 33px;
+  height: 64px;
+  .transition(all 0.2s);
+	
+  &:hover, &:active, &:focus {
+    width: 43px;
+    height: 83px; 
+  }
 }
+	
+    
+    
+
 
