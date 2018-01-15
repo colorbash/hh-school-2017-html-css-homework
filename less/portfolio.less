@@ -1,49 +1,42 @@
 .portfolio {
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 80px;
-  text-align: center;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
-  .portfolio__img1 {
-    display: inline-block;
-    background: url(../img/lake.jpg) no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 254px;
-    margin: 0 0 0 0;
-  }
-  .portfolio__img2 {
-    display: inline-block;
-    background: url(../img/nature.jpg) no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 254px;
-    margin: 0 0 0 0;
-  }
-  .portfolio__img3 {
-    display: inline-block;
-    background: url(../img/tigr.jpg) no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 254px;
-    margin: 0 0 0 0;
-  }
-  .portfolio__img4 {
-    display: inline-block;
-    background: url(../img/bridge.jpg) no-repeat;
-    background-size: cover;
-    width: 260px;
-    height: 254px;
-    margin: 0 0 0 0;
-  }
-  
   .portfolio__themes {
-    margin-right: 20px;
+      margin-right: 20px;
+      list-style-type: none; 
   }
 
   .portfolio__pics{
-    display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
+      display:block;
+      white-space: nowrap;
+      overflow: hidden;
+      height:350px;
+      font-size:0;
+      padding-bottom: 20px;
   }
+  .portfolio__pics-item{
+      display: inline-block;
+      margin:0;
+      height:100%;
+  }
+  
+  .portfolio__info{
+      display:block;
+      text-align: center;
+      margin-left: 150px;
+      margin-right: 150px;
+  }
+  
+  .portfolio__info:after {
+      position: absolute;
+      top: 75%;
+      content: '';
+      left: ~"calc(50% - 40px)";
+      background-color: red;
+      width: 80px;
+      height: 5px;
+  }
+  

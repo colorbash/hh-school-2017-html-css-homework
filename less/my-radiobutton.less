@@ -1,0 +1,48 @@
+.my-radiobutton {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }
+
+    .my-radiobutton input {
+        position: absolute;
+        opacity: 0;
+    }
+    
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #ccc;
+        border-radius: 50%;
+        list-style-type: none; 
+    }
+    
+    .my-radiobutton:hover input ~ .checkmark {
+        background-color: #eee;
+    }
+    
+    .my-radiobutton input:checked ~ .checkmark {
+        background-color: #e64a19;
+    }
+    
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .my-radiobutton input:checked ~ .checkmark:after {
+        display: block;
+    }
+
